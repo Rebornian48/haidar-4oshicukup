@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom Clone Meeting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .video-feed {
+            background-color: #1c2526;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            border: 2px solid #374151;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900 text-white min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-6xl mx-auto flex flex-col items-center py-10">
+        <!-- Header -->
+        <div class="mb-8 flex items-center gap-4">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/video-conference.png" alt="Meeting" class="w-10 h-10">
+            <h1 class="text-3xl font-bold tracking-wide">Zoom Meeting Room</h1>
+        </div>
+        <!-- Main Video Area -->
+        <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+            <div class="video-feed flex flex-col items-center justify-center text-lg font-semibold h-48 md:h-64">
+                <img src="../img/default.jpg" alt="You"
+                    class="w-32 h-32 mb-2">
+                <span>You</span>
+            </div>
+            <div class="video-feed flex flex-col items-center justify-center text-lg font-semibold h-48 md:h-64">
+                <img src="../img/default.jpg" alt="Host"
+                    class="w-32 h-32 mb-2">
+                <span>Host Zoom</span>
+            </div>
+            <div class="video-feed flex flex-col items-center justify-center text-lg font-semibold h-48 md:h-64">
+                <img src="../img/haidar.jpg" alt="Haidar"
+                    class="w-32 h-32 mb-2">
+                <span>Haidar</span>
+            </div>
+            <div class="video-feed flex flex-col items-center justify-center text-lg font-semibold h-48 md:h-64">
+                <img src="../img/4oshi.jpg" alt="4 oshi"
+                    class="w-48 h-48 mb-2">
+            </div>
+        </div>
+
+        <!-- Meeting Controls -->
+        <div class="flex flex-wrap justify-center gap-4 mt-4">
+            <button
+                class="bg-gray-700 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-200 shadow-lg flex items-center gap-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"></path>
+                    <line x1="12" y1="19" x2="12" y2="13"></line>
+                </svg>
+                Mute
+            </button>
+            <button
+                class="bg-gray-700 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-200 shadow-lg flex items-center gap-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <rect x="3" y="7" width="18" height="10" rx="2"></rect>
+                    <line x1="1" y1="1" x2="23" y2="23"></line>
+                </svg>
+                Video Off
+            </button>
+            <button
+                class="bg-gray-700 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-200 shadow-lg flex items-center gap-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <rect x="2" y="7" width="20" height="10" rx="2"></rect>
+                    <polyline points="17 2 17 7"></polyline>
+                    <polyline points="7 2 7 7"></polyline>
+                </svg>
+                Screen Share
+            </button>
+            <button
+                class="bg-gray-700 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-200 shadow-lg flex items-center gap-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <circle cx="12" cy="12" r="10"></circle>
+                </svg>
+                Record
+            </button>
+            <button
+                class="bg-red-600 hover:bg-red-500 animate-pulse text-white px-6 py-3 rounded-full transition duration-200 shadow-lg flex items-center gap-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+                Leave
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
